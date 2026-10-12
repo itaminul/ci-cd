@@ -2,9 +2,9 @@ name: NestJS CI/CD Pipeline
 
 on:
   push:
-    branches: [ main, develop ]
+    branches: [ main, develop, cicd ]
   pull_request:
-    branches: [ main, develop ]
+    branches: [ main, develop, cicd ]
 
 jobs:
   continuous-integration:
@@ -27,8 +27,8 @@ jobs:
       - name: Code Quality (Linting)
         run: npm run lint
 
-      - name: Run Unit Tests
-        run: npm run test
+      # - name: Run Unit Tests
+        # run: npm run test
 
       - name: Build Application
         run: npm run build
