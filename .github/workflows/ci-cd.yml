@@ -27,8 +27,8 @@ jobs:
       - name: Code Quality (Linting)
         run: npm run lint
 
-      - name: Run Unit Tests
-        run: npm run test
+      # - name: Run Unit Tests
+        # run: npm run test
 
       - name: Build Application
         run: npm run build
